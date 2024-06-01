@@ -1,0 +1,60 @@
+.font{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+.cards{
+    padding: 2% 70px 18px;
+    margin: 0px 0px 20px 0;
+    box-shadow: 0px 5px 10px 0 rgba(68, 88, 144, 0.14);
+    border-radius: 10px;
+    background-color: #f5f3fa;    
+    /* border: 1px solid #fff; */
+}
+.caixa-1{
+    padding:50px 0px 50px 0px;    
+}
+.text-1{
+    box-shadow: 0px 5px 20px 0px rgba(68, 88, 144, 0.14);
+    padding: 30px;
+    background-color: white;
+}
+.fatos{
+    background-color: #3D399E;
+    border-radius: 0px 50px 50px 0px;
+}
+.link-top{
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+}
+.flip-card{
+    width: 300px;
+    height: 250px;
+    perspective: 1000px;
+}
+.flip-card:hover .flip-inner{
+    transform: rotateY(-180deg);
+}
+.flip-card .back{
+    transform: rotateY(-180deg);
+}
+.flip-card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.flip-inner{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s;
+}
+.front,
+.back{
+    position: absolute;
+    backface-visibility: hidden;
+}
+.flip-box{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
